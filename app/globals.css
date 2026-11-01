@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg-base: #0c100f;
+    --color-bg-surface: #121715;
+    --color-gold: #c7a77b;
+    --color-gold-light: #e4d3ba;
+    --color-gold-dark: #9e7f53;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #0c100f;
+    color: #f7f5f0;
+    font-family: var(--font-plus-jakarta), sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-cormorant), Georgia, serif;
+  }
+}
+
+@layer utilities {
+  .gold-gradient-text {
+    background: linear-gradient(135deg, #ebdcc7 0%, #c7a77b 50%, #9e7f53 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gold-gradient-bg {
+    background: linear-gradient(135deg, #ebdcc7 0%, #c7a77b 50%, #9e7f53 100%);
+  }
+
+  .glass-card {
+    background: rgba(18, 23, 21, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(199, 167, 123, 0.2);
+  }
+
+  .glass-card-hover {
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .glass-card-hover:hover {
+    background: rgba(24, 31, 28, 0.85);
+    border-color: rgba(199, 167, 123, 0.45);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.6), 0 0 20px rgba(199, 167, 123, 0.12);
+  }
+}
+
+@keyframes floatAnim {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: floatAnim 4.5s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: floatAnim 4.5s ease-in-out infinite 2s;
+}
+
+@keyframes pulseGold {
+  0% {
+    box-shadow: 0 0 0 0 rgba(199, 167, 123, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(199, 167, 123, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(199, 167, 123, 0);
+  }
+}
+
+.animate-pulse-gold {
+  animation: pulseGold 2.2s infinite;
+}
+
