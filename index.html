@@ -12,6 +12,7 @@
   
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/png" href="logo-icon-dark.png">
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -122,14 +123,12 @@
   <header class="sticky top-0 z-40 bg-santt-cream/90 backdrop-blur-md transition-all duration-300 border-b border-stone-200/50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
-      <!-- Logo Santt -->
-      <a href="#" class="flex items-center gap-3 group">
-        <div class="w-10 h-10 rounded-full bg-santt-green text-santt-nude flex items-center justify-center font-luxury text-2xl font-bold tracking-widest shadow-sm group-hover:scale-105 transition-transform">
-          S
-        </div>
-        <div class="flex flex-col">
-          <span class="font-luxury text-2xl tracking-[0.22em] font-semibold text-santt-green leading-none">SANTT</span>
-          <span class="text-[9px] uppercase tracking-[0.3em] text-santt-muted font-medium mt-1">Saúde & Longevidade</span>
+      <!-- Logo Santt Oficial -->
+      <a href="#" class="flex items-center gap-3 group" aria-label="SANTT Clínica">
+        <img src="logo-santt-dark.png" alt="SANTT Clínica" class="h-9 sm:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+        <div class="hidden sm:flex flex-col border-l border-stone-300/60 pl-3">
+          <span class="text-[9px] uppercase tracking-[0.28em] text-santt-muted font-medium leading-tight">Saúde &amp; Longevidade</span>
+          <span class="text-[8px] uppercase tracking-[0.2em] text-santt-sage font-light leading-tight">Capim Macio • Natal</span>
         </div>
       </a>
 
@@ -867,8 +866,8 @@
             
             <!-- Badge Flutuante no Mapa -->
             <div class="absolute bottom-4 left-4 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-lg border border-stone-200 flex items-center gap-3">
-              <div class="w-8 h-8 rounded-full bg-santt-green text-santt-nude flex items-center justify-center font-bold text-xs">
-                S
+              <div class="w-8 h-8 rounded-full bg-santt-green flex items-center justify-center p-1.5 shadow-sm">
+                <img src="logo-icon-light.png" alt="SANTT" class="w-full h-full object-contain">
               </div>
               <div>
                 <p class="text-xs font-bold text-santt-charcoal">SANTT Clínica</p>
@@ -920,15 +919,9 @@
         
         <!-- Coluna Marca -->
         <div class="lg:col-span-4 space-y-4">
-          <div class="flex items-center gap-3">
-            <div class="w-9 h-9 rounded-full bg-santt-green text-santt-nude flex items-center justify-center font-luxury text-xl font-bold">
-              S
-            </div>
-            <div class="flex flex-col">
-              <span class="font-luxury text-2xl tracking-[0.2em] font-semibold text-santt-green leading-none">SANTT</span>
-              <span class="text-[9px] uppercase tracking-[0.3em] text-santt-muted font-medium mt-1">Saúde & Longevidade</span>
-            </div>
-          </div>
+          <a href="#" class="inline-flex items-center gap-3 group" aria-label="SANTT Clínica">
+            <img src="logo-santt-dark.png" alt="SANTT Clínica" class="h-9 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+          </a>
           <p class="text-xs text-santt-muted leading-relaxed max-w-sm">
             Clínica voltada à promoção da saúde integrativa, longevidade celular, emagrecimento saudável e alta performance esportiva na capital potiguar.
           </p>
