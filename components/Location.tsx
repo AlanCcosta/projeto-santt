@@ -43,7 +43,8 @@ export function Location() {
                       Horário de Funcionamento:
                     </strong>
                     <span className="text-xs sm:text-sm text-santt-text-muted">
-                      {siteConfig.hours.weekdays} | {siteConfig.hours.saturday}
+                      {siteConfig.hours.weekdays}
+                      {siteConfig.hours.saturday ? ` | ${siteConfig.hours.saturday}` : ""}
                     </span>
                   </div>
                 </div>

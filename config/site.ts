@@ -7,8 +7,8 @@ export const siteConfig = {
   address: "Rua Industrial João Motta, 1510 — Capim Macio, Natal - RN, CEP 59082-410",
   addressShort: "Rua Industrial João Motta, 1510, Capim Macio, Natal - RN",
   hours: {
-    weekdays: "Segunda a Sexta: 07h às 20h",
-    saturday: "Sábado: 08h às 13h",
+    weekdays: "Segunda a Sexta: 08:00 às 19:00",
+    saturday: "",
   },
   instagram: {
     handle: "@santtclinica",
