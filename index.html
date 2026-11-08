@@ -151,7 +151,7 @@
         <a href="#sobre" class="hover:text-santt-green transition-colors">A Clínica</a>
         <a href="#especialidades" class="hover:text-santt-green transition-colors">Especialidades</a>
         <a href="#protocolos" class="hover:text-santt-green transition-colors">Protocolos</a>
-        <a href="#depoimentos" class="hover:text-santt-green transition-colors">Depoimentos</a>
+        <a href="#profissionais" class="hover:text-santt-green transition-colors">Para Profissionais</a>
         <a href="#localizacao" class="hover:text-santt-green transition-colors">Localização</a>
       </nav>
 
@@ -183,7 +183,7 @@
         <a href="#sobre" onclick="toggleMenu()" class="hover:text-santt-green">A Clínica</a>
         <a href="#especialidades" onclick="toggleMenu()" class="hover:text-santt-green">Especialidades</a>
         <a href="#protocolos" onclick="toggleMenu()" class="hover:text-santt-green">Protocolos Integrados</a>
-        <a href="#depoimentos" onclick="toggleMenu()" class="hover:text-santt-green">Depoimentos</a>
+        <a href="#profissionais" onclick="toggleMenu()" class="hover:text-santt-green">Para Profissionais</a>
         <a href="#localizacao" onclick="toggleMenu()" class="hover:text-santt-green">Localização em Capim Macio</a>
         <div class="pt-4 border-t border-stone-200 flex flex-col gap-3">
           <a href="https://www.instagram.com/santtclinica/" target="_blank"
@@ -799,105 +799,98 @@
   </section>
 
   <!-- ========================================== -->
-  <!-- SEÇÃO 5: DEPOIMENTOS DE PACIENTES          -->
+  <!-- SEÇÃO 5: ESPAÇO PARA PROFISSIONAIS DA SAÚDE -->
   <!-- ========================================== -->
-  <section id="depoimentos" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-    <div class="text-center max-w-2xl mx-auto mb-16">
-      <span class="text-xs uppercase tracking-widest text-santt-sage font-bold">Experiências Reais</span>
-      <h2 class="font-luxury text-3xl sm:text-4xl lg:text-5xl text-santt-green font-normal mt-1">
-        O Que Dizem os Nossos Pacientes
-      </h2>
-      <p class="text-santt-muted text-sm sm:text-base mt-2">
-        Histórias de quem encontrou na SANTT o suporte ideal para correr melhor, trabalhar sem dor e viver com energia
-        renovada.
-      </p>
-    </div>
+  <section id="profissionais" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Coluna da Esquerda: Foto do Espaço com Card Flutuante (Inspirado na Referência) -->
+      <div class="lg:col-span-6 relative">
+        <div class="relative rounded-3xl sm:rounded-[2.5rem] overflow-hidden bg-stone-200 border border-stone-200/80 shadow-md group">
+          <img src="espaco-profissionais-santt.webp"
+            alt="Consultório e Espaço para Locação Profissional - SANTT Clínica Integrada"
+            class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700">
 
-      <!-- Depoimento 1 -->
-      <div
-        class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow border border-stone-200/60 flex flex-col justify-between">
-        <div>
-          <div class="flex text-amber-500 text-sm mb-4">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <p class="text-santt-charcoal text-sm leading-relaxed italic mb-6">
-            "Comecei a preparação para a Meia Maratona do Sol com o acompanhamento nutricional na Santt. Reduzi 6kg de
-            gordura e cheguei no meu melhor pace da vida sem me lesionar. Estrutura impecável em Capim Macio!"
-          </p>
-        </div>
-        <div class="flex items-center gap-3 border-t border-stone-100 pt-4">
-          <div
-            class="w-10 h-10 rounded-full bg-santt-sand text-santt-green font-bold flex items-center justify-center text-xs">
-            AL
-          </div>
-          <div>
-            <h5 class="text-xs font-bold text-santt-charcoal">André Lucena</h5>
-            <p class="text-[10px] text-santt-muted">Corredor Amador • Natal/RN</p>
+          <!-- Card Flutuante no Canto Inferior -->
+          <div class="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-auto sm:max-w-xs bg-white/95 backdrop-blur-md p-4 sm:p-5 rounded-2xl shadow-xl border border-stone-200/70">
+            <p class="text-xs text-santt-charcoal font-medium leading-relaxed italic">
+              "Estrutura completa e arquitetura de alto padrão desenhadas para valorizar o seu atendimento."
+            </p>
+            <div class="mt-2.5 flex items-center gap-2 text-[11px] font-bold text-santt-green">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              Consultórios Prontos para Atender
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Depoimento 2 -->
-      <div
-        class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow border border-stone-200/60 flex flex-col justify-between">
+      <!-- Coluna da Direita: Conteúdo Textual e Diferenciais -->
+      <div class="lg:col-span-6 space-y-6">
         <div>
-          <div class="flex text-amber-500 text-sm mb-4">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <p class="text-santt-charcoal text-sm leading-relaxed italic mb-6">
-            "A clínica tem uma vibe muito acolhedora e elegante. A fisioterapia resolveu dores lombares crônicas que eu
-            tinha há mais de 3 anos de trabalho em escritório. Você sente que os profissionais realmente conversam entre
-            si."
+          <span class="text-xs uppercase tracking-widest text-santt-sage font-bold flex items-center gap-2 mb-3">
+            <span class="w-6 h-px bg-santt-sage"></span> Locação de Consultórios
+          </span>
+          <h2 class="font-luxury text-3xl sm:text-4xl lg:text-5xl text-santt-green font-normal leading-tight">
+            Estrutura de excelência para
+            <span class="italic font-light text-santt-forest block">receber seus pacientes.</span>
+          </h2>
+          <p class="text-santt-muted text-sm sm:text-base leading-relaxed mt-4">
+            A SANTT oferece consultórios privativos completos e climatizados para médicos, nutricionistas, fisioterapeutas, psicólogos e profissionais da saúde. O ambiente ideal para você atender com máximo conforto e sofisticação, sem os custos e preocupações de montar um espaço próprio.
           </p>
         </div>
-        <div class="flex items-center gap-3 border-t border-stone-100 pt-4">
-          <div
-            class="w-10 h-10 rounded-full bg-santt-nude text-santt-dark font-bold flex items-center justify-center text-xs">
-            CM
-          </div>
-          <div>
-            <h5 class="text-xs font-bold text-santt-charcoal">Clarissa Medeiros</h5>
-            <p class="text-[10px] text-santt-muted">Advogada • Moradora de Capim Macio</p>
-          </div>
-        </div>
-      </div>
 
-      <!-- Depoimento 3 -->
-      <div
-        class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow border border-stone-200/60 flex flex-col justify-between">
-        <div>
-          <div class="flex text-amber-500 text-sm mb-4">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+        <!-- Lista de Benefícios com Ícones Circulares (Fiel à Referência) -->
+        <div class="space-y-4 pt-2">
+          
+          <div class="flex items-start gap-3.5">
+            <div class="w-8 h-8 rounded-full bg-emerald-50 border border-emerald-100 text-santt-green flex items-center justify-center shrink-0 mt-0.5">
+              <i class="fa-solid fa-check text-xs"></i>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-santt-charcoal">Consultórios Prontos e Mobiliados</h4>
+              <p class="text-xs text-santt-muted mt-0.5 leading-relaxed">
+                Salas climatizadas com design contemporâneo assinado, isolamento acústico, maca/mesa ergonômica e iluminação cênica planejada.
+              </p>
+            </div>
           </div>
-          <p class="text-santt-charcoal text-sm leading-relaxed italic mb-6">
-            "O cuidado com a longevidade é o grande diferencial da Santt. Não é só prescrever suplemento, é olhar o
-            exame detalhado, sono, estresse e metabolismo. Me sinto com a disposição dos meus 25 anos."
-          </p>
+
+          <div class="flex items-start gap-3.5">
+            <div class="w-8 h-8 rounded-full bg-emerald-50 border border-emerald-100 text-santt-green flex items-center justify-center shrink-0 mt-0.5">
+              <i class="fa-solid fa-wand-magic-sparkles text-xs"></i>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-santt-charcoal">Recepção Concierge & Experiência Humanizada</h4>
+              <p class="text-xs text-santt-muted mt-0.5 leading-relaxed">
+                Seus pacientes acolhidos com alto padrão de hospitalidade, sala de espera confortável e suporte de atendimento exclusivo.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3.5">
+            <div class="w-8 h-8 rounded-full bg-emerald-50 border border-emerald-100 text-santt-green flex items-center justify-center shrink-0 mt-0.5">
+              <i class="fa-solid fa-clock text-xs"></i>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-santt-charcoal">Flexibilidade de Turnos e Períodos</h4>
+              <p class="text-xs text-santt-muted mt-0.5 leading-relaxed">
+                Sublocação sob medida para a sua rotina de consultas, em localização nobre e de fácil acesso com estacionamento em Capim Macio.
+              </p>
+            </div>
+          </div>
+
         </div>
-        <div class="flex items-center gap-3 border-t border-stone-100 pt-4">
-          <div
-            class="w-10 h-10 rounded-full bg-santt-green text-white font-bold flex items-center justify-center text-xs">
-            RF
-          </div>
-          <div>
-            <h5 class="text-xs font-bold text-santt-charcoal">Roberto F. Silveira</h5>
-            <p class="text-[10px] text-santt-muted">Empresário • Natal/RN</p>
-          </div>
+
+        <!-- Botão de Ação / Contato WhatsApp -->
+        <div class="pt-4 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <a href="https://wa.me/5584996140959?text=Ol%C3%A1!%20Sou%20profissional%20da%20sa%C3%BAde%20e%20gostaria%20de%20conhecer%20os%20consult%C3%B3rios%20e%20espa%C3%A7os%20para%20loca%C3%A7%C3%A3o%20na%20Santt%20Cl%C3%ADnica."
+            target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center gap-2.5 bg-santt-green hover:bg-santt-forest text-white px-7 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+            <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
+            <span>Quero Atender na SANTT</span>
+          </a>
+          <span class="text-xs text-santt-muted">Agende uma visita e conheça nossos consultórios</span>
         </div>
+
       </div>
 
     </div>
@@ -1074,7 +1067,7 @@
             <li><a href="#sobre" class="hover:text-santt-green transition-colors">A Clínica</a></li>
             <li><a href="#especialidades" class="hover:text-santt-green transition-colors">Especialidades</a></li>
             <li><a href="#protocolos" class="hover:text-santt-green transition-colors">Protocolos</a></li>
-            <li><a href="#depoimentos" class="hover:text-santt-green transition-colors">Depoimentos</a></li>
+            <li><a href="#profissionais" class="hover:text-santt-green transition-colors">Para Profissionais</a></li>
             <li><a href="#localizacao" class="hover:text-santt-green transition-colors">Localização</a></li>
           </ul>
         </div>

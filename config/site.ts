@@ -28,7 +28,7 @@ export const siteConfig = {
     { label: "Especialidades", href: "#especialidades" },
     { label: "A Experiência", href: "#experiencia" },
     { label: "Corpo Clínico", href: "#corpo-clinico" },
-    { label: "Resultados", href: "#depoimentos" },
+    { label: "Para Profissionais", href: "#profissionais" },
     { label: "Localização", href: "#localizacao" },
     { label: "Dúvidas", href: "#faq" },
   ],

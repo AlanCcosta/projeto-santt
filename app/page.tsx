@@ -4,7 +4,7 @@ import { Concept } from "@/components/Concept";
 import { Services } from "@/components/Services";
 import { Experience } from "@/components/Experience";
 import { Team } from "@/components/Team";
-import { Testimonials } from "@/components/Testimonials";
+import { Professionals } from "@/components/Professionals";
 import { Location } from "@/components/Location";
 import { Faq } from "@/components/Faq";
 import { CtaBanner } from "@/components/CtaBanner";
@@ -21,7 +21,7 @@ export default function Home() {
         <Services />
         <Experience />
         <Team />
-        <Testimonials />
+        <Professionals />
         <Location />
         <Faq />
         <CtaBanner />
