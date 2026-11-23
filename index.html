@@ -66,6 +66,12 @@
       font-family: 'Cormorant Garamond', Georgia, serif;
     }
 
+    .hero-video-shade {
+      background:
+        linear-gradient(180deg, rgba(7, 25, 20, .77), rgba(7, 25, 20, .20) 28%, rgba(7, 25, 20, .28) 60%, rgba(7, 25, 20, .84)),
+        linear-gradient(90deg, rgba(7, 25, 20, .13), rgba(7, 25, 20, .64) 34%, rgba(7, 25, 20, .64) 66%, rgba(7, 25, 20, .13));
+    }
+
     /* Formato de arco orgânico inspirado no design enviado */
     .arch-mask-left {
       border-radius: 140px 140px 30px 30px;
@@ -203,110 +209,130 @@
   <!-- ========================================== -->
   <!-- HERO SECTION                               -->
   <!-- ========================================== -->
-  <section id="inicio" class="pt-4 pb-12 md:py-8 px-3 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+  <section id="inicio" class="pt-4 pb-12 md:py-8" aria-labelledby="hero-title">
+    <div class="relative isolate overflow-hidden bg-santt-green text-white">
+      <video id="hero-video" class="absolute inset-0 h-full w-full object-cover" muted loop playsinline
+        preload="none" poster="espaco-profissionais-santt.webp" aria-hidden="true"
+        data-desktop-src="hero-santt-video.mp4" data-mobile-src="hero-santt-video-mobile.mp4"></video>
+      <div class="hero-video-shade pointer-events-none absolute inset-0" aria-hidden="true"></div>
 
-    <!-- Cartão Principal Verde Escuro com Arcos -->
-    <div
-      class="bg-santt-green text-white rounded-4xl sm:rounded-5xl pt-10 sm:pt-14 px-6 sm:px-10 lg:px-14 relative overflow-hidden shadow-2xl">
+      <div class="relative max-w-7xl mx-auto pt-10 pb-8 sm:pt-14 px-6 sm:px-10 lg:px-14 xl:pb-0">
+        <!-- Barra superior do Card Hero -->
+        <div class="flex items-center justify-between pb-8 border-b border-white/10 text-xs sm:text-sm text-stone-300">
+          <span class="tracking-widest uppercase font-luxury text-sm sm:text-base text-santt-sand">
+            SANTT • Capim Macio, Natal
+          </span>
+          <div class="hidden sm:flex items-center gap-6">
+            <a href="#sobre" class="hover:text-white transition-colors">A Estrutura</a>
+            <a href="#consultorios" class="hover:text-white transition-colors">Consultórios</a>
+            <a href="#planos" class="hover:text-white transition-colors">Planos & Turnos</a>
+            <a href="#localizacao" class="hover:text-white transition-colors">Contato</a>
+            <button onclick="openBookingModal()"
+              class="bg-santt-nude/90 hover:bg-santt-nude text-santt-dark px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all">
+              Agendar Visita
+            </button>
+          </div>
+        </div>
 
-      <!-- Detalhe decorativo sutil de fundo -->
-      <div class="absolute -right-24 -top-24 w-96 h-96 bg-emerald-800/20 rounded-full blur-3xl pointer-events-none">
-      </div>
-      <div class="absolute -left-20 bottom-0 w-80 h-80 bg-santt-nude/10 rounded-full blur-3xl pointer-events-none">
-      </div>
+        <div class="flex items-center justify-center px-2 py-12 sm:py-14 lg:min-h-[32rem]">
+          <div class="w-full max-w-[36rem] text-center">
 
-      <!-- Barra superior do Card Hero -->
-      <div class="flex items-center justify-between pb-8 border-b border-white/10 text-xs sm:text-sm text-stone-300">
-        <span class="tracking-widest uppercase font-luxury text-sm sm:text-base text-santt-sand">
-          SANTT • Capim Macio, Natal
-        </span>
-        <div class="hidden sm:flex items-center gap-6">
-          <a href="#sobre" class="hover:text-white transition-colors">A Estrutura</a>
-          <a href="#consultorios" class="hover:text-white transition-colors">Consultórios</a>
-          <a href="#planos" class="hover:text-white transition-colors">Planos & Turnos</a>
-          <a href="#localizacao" class="hover:text-white transition-colors">Contato</a>
-          <button onclick="openBookingModal()"
-            class="bg-santt-nude/90 hover:bg-santt-nude text-santt-dark px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all">
-            Agendar Visita
+            <div
+              class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs text-santt-sand mb-6">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              Espaço Exclusivo para Profissionais da Saúde
+            </div>
+
+            <h1 id="hero-title"
+              class="font-luxury text-4xl sm:text-5xl lg:text-6xl text-white font-normal leading-[1.14] tracking-tight mb-6">
+              Encontre o seu<br class="hidden sm:inline"> consultório ideal<br>
+              <span class="italic text-santt-nude font-normal">em Capim Macio, Natal.</span>
+            </h1>
+
+            <p class="text-stone-300 text-sm sm:text-base max-w-xl mx-auto font-light leading-relaxed mb-8">
+              Estrutura de excelência, sofisticação e suporte completo para médicos, nutricionistas, psicólogos e profissionais da saúde atenderem seus pacientes com alto padrão e máxima flexibilidade.
+            </p>
+
+            <!-- CTAs Centrais -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <button onclick="openBookingModal()"
+                class="w-full sm:w-auto bg-santt-nude hover:bg-santt-nudeHover text-santt-dark font-semibold px-8 py-3.5 rounded-full text-sm transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                Agendar Visita Técnica
+              </button>
+              <a href="https://wa.me/5584996140959?text=Ol%C3%A1!%20Sou%20profissional%20da%20sa%C3%BAde%20e%20gostaria%20de%20conhecer%20os%20consult%C3%B3rios%20da%20Santt%20Cl%C3%ADnica."
+                target="_blank"
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-white/30 hover:border-white text-white hover:bg-white/10 px-7 py-3.5 rounded-full text-sm transition-all">
+                <i class="fa-brands fa-whatsapp text-emerald-400"></i> Falar com a Gestão
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Barra Inferior de Métricas -->
+        <div class="border-t border-white/15 py-8 grid grid-cols-3 gap-4 text-center max-w-4xl mx-auto">
+          <div class="px-2">
+            <div class="font-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight">100%</div>
+            <div class="text-[11px] sm:text-xs text-stone-300 uppercase tracking-widest mt-1">Mobiliado &amp; Climatizado</div>
+          </div>
+          <div class="px-2 border-x border-white/15">
+            <div class="font-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-santt-nude tracking-tight">Zero</div>
+            <div class="text-[11px] sm:text-xs text-stone-300 uppercase tracking-widest mt-1">Custos de Reforma ou IPTU</div>
+          </div>
+          <div class="px-2">
+            <div class="font-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight">Flexível</div>
+            <div class="text-[11px] sm:text-xs text-stone-300 uppercase tracking-widest mt-1">Turnos, Dias ou Mensal</div>
+          </div>
+        </div>
+
+        <div class="absolute bottom-4 right-6 sm:right-10 lg:right-14" id="hero-video-controls" hidden>
+          <button type="button" id="hero-video-toggle" aria-controls="hero-video"
+            class="rounded-full border border-white/40 bg-black/40 px-3 py-1.5 text-xs text-white hover:bg-black/70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+            Pausar vídeo
           </button>
         </div>
       </div>
-
-      <!-- Grid Principal Hero: Foto Esquerda + Conteúdo Central + Foto Direita -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center pt-8 pb-12 lg:pb-16">
-
-        <!-- Foto Esquerda (Arco Alto com Espaço Real da Clínica) -->
-        <div class="lg:col-span-3 flex flex-col items-center justify-center relative order-2 lg:order-1">
-          <div
-            class="relative w-full max-w-[260px] sm:max-w-[280px] h-[340px] sm:h-[390px] overflow-hidden rounded-t-[140px] rounded-b-[40px] border-2 border-white/15 shadow-xl bg-santt-forest">
-            <img src="hero-santt-espaco.jpg"
-              alt="Consultório de alto padrão na SANTT Clínica em Capim Macio"
-              class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700">
-          </div>
-        </div>
-
-        <!-- Conteúdo Central Hero -->
-        <div class="lg:col-span-6 text-center px-2 sm:px-4 order-1 lg:order-2">
-
-          <div
-            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs text-santt-sand mb-6">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            Espaço Exclusivo para Profissionais da Saúde
-          </div>
-
-          <h1
-            class="font-luxury text-4xl sm:text-5xl lg:text-6xl text-white font-normal leading-[1.14] tracking-tight mb-6">
-            Encontre o seu<br class="hidden sm:inline"> consultório ideal<br>
-            <span class="italic text-santt-nude font-normal">em Capim Macio, Natal.</span>
-          </h1>
-
-          <p class="text-stone-300 text-sm sm:text-base max-w-xl mx-auto font-light leading-relaxed mb-8">
-            Estrutura de excelência, sofisticação e suporte completo para médicos, nutricionistas, psicólogos e profissionais da saúde atenderem seus pacientes com alto padrão e máxima flexibilidade.
-          </p>
-
-          <!-- CTAs Centrais -->
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button onclick="openBookingModal()"
-              class="w-full sm:w-auto bg-santt-nude hover:bg-santt-nudeHover text-santt-dark font-semibold px-8 py-3.5 rounded-full text-sm transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-              Agendar Visita Técnica
-            </button>
-            <a href="https://wa.me/5584996140959?text=Ol%C3%A1!%20Sou%20profissional%20da%20sa%C3%BAde%20e%20gostaria%20de%20conhecer%20os%20consult%C3%B3rios%20da%20Santt%20Cl%C3%ADnica."
-              target="_blank"
-              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-white/30 hover:border-white text-white hover:bg-white/10 px-7 py-3.5 rounded-full text-sm transition-all">
-              <i class="fa-brands fa-whatsapp text-emerald-400"></i> Falar com a Gestão
-            </a>
-          </div>
-        </div>
-
-        <!-- Foto Direita (Arco de Reabilitação & Ambientes) -->
-        <div class="lg:col-span-3 hidden lg:flex flex-col items-center justify-center order-3">
-          <div
-            class="w-full max-w-[260px] sm:max-w-[280px] h-[340px] sm:h-[390px] overflow-hidden rounded-t-[140px] rounded-br-[140px] rounded-bl-[40px] border-2 border-white/15 shadow-xl bg-santt-forest">
-            <img src="espaco-profissionais-santt.webp"
-              alt="Ambiente pronto para atendimento médico na SANTT"
-              class="w-full h-full object-cover object-center filter saturate-[0.95] hover:scale-105 transition-transform duration-700">
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Barra Inferior de Métricas -->
-      <div class="border-t border-white/15 py-8 grid grid-cols-3 gap-4 text-center max-w-4xl mx-auto">
-        <div class="px-2">
-          <div class="font-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight">100%</div>
-          <div class="text-[11px] sm:text-xs text-stone-300 uppercase tracking-widest mt-1">Mobiliado &amp; Climatizado</div>
-        </div>
-        <div class="px-2 border-x border-white/15">
-          <div class="font-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-santt-nude tracking-tight">Zero</div>
-          <div class="text-[11px] sm:text-xs text-stone-300 uppercase tracking-widest mt-1">Custos de Reforma ou IPTU</div>
-        </div>
-        <div class="px-2">
-          <div class="font-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight">Flexível</div>
-          <div class="text-[11px] sm:text-xs text-stone-300 uppercase tracking-widest mt-1">Turnos, Dias ou Mensal</div>
-        </div>
-      </div>
-
     </div>
+    <script>
+      (() => {
+        const video = document.getElementById('hero-video');
+        const controls = document.getElementById('hero-video-controls');
+        const toggle = document.getElementById('hero-video-toggle');
+        const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+        const mobile = matchMedia('(max-width: 767px)');
+
+        const play = () => video.play().catch((error) => {
+          if (error.name === 'NotAllowedError' && !reducedMotion.matches) {
+            controls.hidden = false;
+            toggle.textContent = 'Reproduzir vídeo';
+          }
+        });
+        const syncMotion = () => {
+          if (reducedMotion.matches) {
+            video.removeAttribute('src');
+            video.load();
+            controls.hidden = true;
+            return;
+          }
+
+          video.src = mobile.matches ? video.dataset.mobileSrc : video.dataset.desktopSrc;
+          play();
+        };
+
+        video.addEventListener('playing', () => {
+          controls.hidden = false;
+          toggle.textContent = 'Pausar vídeo';
+        });
+        video.addEventListener('pause', () => {
+          toggle.textContent = 'Reproduzir vídeo';
+        });
+        toggle.addEventListener('click', () => {
+          if (video.paused) play();
+          else video.pause();
+        });
+        reducedMotion.addEventListener('change', syncMotion);
+        syncMotion();
+      })();
+    </script>
   </section>
 
   <!-- ========================================== -->
